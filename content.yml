@@ -1,0 +1,17 @@
+welcome: # this is the #welcome bloc referenced in index.js
+  - typing: true
+    text: # Picks one randomly
+      - سلام {{user.first_name}}
+  - wait: 8s
+  - text: این بات برای خرید محصولات تولید شده .ممنون که از بات ما استفاده میکنید
+    typing: 8s
+
+
+message:
+  - text:   {{message}} 😀
+    keyboards:
+      - text: text
+        request_contact: true
+      - text: text
+        request_location: false
+    typing: true
